@@ -143,34 +143,14 @@
   <div class="p-5 mt-auto border-t" style="border-color: color-mix(in oklab, var(--rc-line) 70%, transparent);">
     <div class="flex justify-center items-center gap-2">
       
-        <a href="https://scholar.google.com/citations?user=YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="Google Scholar">
-          <i class="fa-brands fa-google-scholar text-xl block"></i>
-        </a>
       
       
-        <a href="https://orcid.org/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="ORCID">
-          <i class="fa-brands fa-orcid text-xl block"></i>
-        </a>
       
-      
-        <a href="https://www.researchgate.net/profile/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="ResearchGate">
-          <i class="fa-brands fa-researchgate text-xl block"></i>
-        </a>
-      
-      
-        <a href="https://github.com/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="GitHub">
+        <a href="https://github.com/kiri-yuu" class="rc-social" target="_blank" rel="noopener noreferrer" title="GitHub">
           <i class="fa-brands fa-github text-xl block"></i>
         </a>
       
       
-        <a href="https://linkedin.com/in/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-          <i class="fa-brands fa-linkedin text-xl block"></i>
-        </a>
-      
-      
-        <a href="https://twitter.com/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="Twitter">
-          <i class="fa-brands fa-twitter text-xl block"></i>
-        </a>
       
     </div>
   </div>
@@ -195,7 +175,7 @@
     <div class="drawer-content flex flex-col">
       <!-- Mobile navbar -->
       <div class="rc-nav w-full navbar fixed top-0 left-0 right-0 z-40">
-        <label for="my-drawer" class="rc-nav-icon" aria-label="Toggle menu">
+        <label for="my-drawer" class="rc-nav-icon" aria-label="切换菜单">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -305,34 +285,14 @@
   <div class="p-5 mt-auto border-t" style="border-color: color-mix(in oklab, var(--rc-line) 70%, transparent);">
     <div class="flex justify-center items-center gap-2">
       
-        <a href="https://scholar.google.com/citations?user=YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="Google Scholar">
-          <i class="fa-brands fa-google-scholar text-xl block"></i>
-        </a>
       
       
-        <a href="https://orcid.org/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="ORCID">
-          <i class="fa-brands fa-orcid text-xl block"></i>
-        </a>
       
-      
-        <a href="https://www.researchgate.net/profile/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="ResearchGate">
-          <i class="fa-brands fa-researchgate text-xl block"></i>
-        </a>
-      
-      
-        <a href="https://github.com/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="GitHub">
+        <a href="https://github.com/kiri-yuu" class="rc-social" target="_blank" rel="noopener noreferrer" title="GitHub">
           <i class="fa-brands fa-github text-xl block"></i>
         </a>
       
       
-        <a href="https://linkedin.com/in/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-          <i class="fa-brands fa-linkedin text-xl block"></i>
-        </a>
-      
-      
-        <a href="https://twitter.com/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="Twitter">
-          <i class="fa-brands fa-twitter text-xl block"></i>
-        </a>
       
     </div>
   </div>
@@ -367,7 +327,7 @@
       
       <!-- 上面处理过的 aboutText（已去掉 HTML 标签，纯文字） -->
       
-        <p class="mt-6 max-w-xl text-base-content/70 leading-relaxed text-[1.05rem]">I am a researcher passionate about artificial intelligence and computational biology. My work focuses on leveraging machine learning to solve real-world problems. Outside of research, I enjoy hiking, writing, and coffee brewing.</p>
+        <p class="mt-6 max-w-xl text-base-content/70 leading-relaxed text-[1.05rem]">我是于青悦，一名电子信息工程本科在读学生，一个对技术感兴趣的地球居民. 习惯使用 Obsidian 搭建个人知识库，依靠自定义 Agent 技能自动化整理工程笔记，把项目文档、算法推导、代码片段、学习笔记统一维护在 Git 版本库中。 这个站点用来沉淀工程实践、课程学习、技术踩坑记录与零散想法，持续记录探索过程。 我养了两只可爱的猫猫,一只叫毛韦伯,一只叫小白(是一只黑猫)</p>
       
       <!-- 两个入口按钮：关于我（/cv）、专业项目（/projects） -->
       <div class="mt-8 flex flex-wrap items-center gap-3">
@@ -395,11 +355,12 @@
 <div class="rc-section"><hr class="rc-divider" /></div>
 
 <!-- ============ ② 研究方向（读 source/_data/cv.yml 的 research_interests） ============ -->
+<!-- 注：同一份数据也被 CV 页当作第 01 块渲染（cv.ejs 的 #research）。改内容只需改 cv.yml 一处。 -->
 
 <section class="rc-section rc-reveal">
   <div class="rc-section-head">
     <span class="rc-kicker">Focus Areas</span>
-    <h2 class="rc-section-title text-base-content">Research Interests</h2>
+    <h2 class="rc-section-title text-base-content">Research Interests <span class="rc-title-zh">研究兴趣</span></h2>
   </div>
 
   <!-- 响应式网格：手机 1 列 / 中屏 2 列 / 大屏 3 列 -->
@@ -407,21 +368,21 @@
     
       <div class="rc-card rc-focus">
         <div class="rc-card-body">
-          <h3 class="rc-serif text-lg font-bold">Machine Learning Theory</h3>
+          <h3 class="rc-serif text-lg font-bold">Vibe Coding</h3>
           
-            <p class="rc-muted text-sm mt-2">Developing theoretical foundations for deep learning algorithms, with focus on generalization bounds and optimization landscapes</p>
+            <p class="rc-muted text-sm mt-2">利用AI辅助编程快速构建网页与各类工具原型，探索人机协同开发的工作流与实践技巧</p>
           
           <!-- 关键词做成小标签（keywords 是数组，可为空） -->
           
             <div class="flex flex-wrap gap-1.5 mt-4">
               
-                <span class="rc-tag">Deep Learning</span>
+                <span class="rc-tag">AI辅助开发</span>
               
-                <span class="rc-tag">Optimization</span>
+                <span class="rc-tag">原型快速搭建</span>
               
-                <span class="rc-tag">Generalization</span>
+                <span class="rc-tag">Web开发</span>
               
-                <span class="rc-tag">PAC-Bayes</span>
+                <span class="rc-tag">工具开发</span>
               
             </div>
           
@@ -430,21 +391,21 @@
     
       <div class="rc-card rc-focus">
         <div class="rc-card-body">
-          <h3 class="rc-serif text-lg font-bold">AI Safety and Alignment</h3>
+          <h3 class="rc-serif text-lg font-bold">嵌入式Linux开发</h3>
           
-            <p class="rc-muted text-sm mt-2">Ensuring AI systems behave safely and in accordance with human values</p>
+            <p class="rc-muted text-sm mt-2">研究嵌入式Linux内核裁剪、驱动开发、交叉编译与嵌入式应用程序部署</p>
           
           <!-- 关键词做成小标签（keywords 是数组，可为空） -->
           
             <div class="flex flex-wrap gap-1.5 mt-4">
               
-                <span class="rc-tag">AI Safety</span>
+                <span class="rc-tag">嵌入式Linux</span>
               
-                <span class="rc-tag">Value Alignment</span>
+                <span class="rc-tag">内核裁剪</span>
               
-                <span class="rc-tag">Robustness</span>
+                <span class="rc-tag">设备驱动</span>
               
-                <span class="rc-tag">Interpretability</span>
+                <span class="rc-tag">交叉编译</span>
               
             </div>
           
@@ -453,21 +414,23 @@
     
       <div class="rc-card rc-focus">
         <div class="rc-card-body">
-          <h3 class="rc-serif text-lg font-bold">Natural Language Processing</h3>
+          <h3 class="rc-serif text-lg font-bold">Office软件应用</h3>
           
-            <p class="rc-muted text-sm mt-2">Building systems that can understand and generate human language</p>
+            <p class="rc-muted text-sm mt-2">熟练使用office办公软件，掌握文档处理、数据分析与自动化办公技巧,同时可以与ai agent工具结合提高工作效率</p>
           
           <!-- 关键词做成小标签（keywords 是数组，可为空） -->
           
             <div class="flex flex-wrap gap-1.5 mt-4">
               
-                <span class="rc-tag">Language Models</span>
+                <span class="rc-tag">Office办公软件</span>
               
-                <span class="rc-tag">Transformers</span>
+                <span class="rc-tag">文档处理</span>
               
-                <span class="rc-tag">Multimodal AI</span>
+                <span class="rc-tag">数据分析</span>
               
-                <span class="rc-tag">Reasoning</span>
+                <span class="rc-tag">自动化办公</span>
+              
+                <span class="rc-tag">AI agent工具</span>
               
             </div>
           
@@ -482,50 +445,15 @@
 <section class="rc-section rc-reveal">
   <div class="rc-section-head">
     <span class="rc-kicker">Journal</span>
-    <h2 class="rc-section-title text-base-content">Recent Notes</h2>
+    <h2 class="rc-section-title text-base-content">Recent Notes <span class="rc-title-zh">最近笔记</span></h2>
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     
-      <article class="rc-card rc-focus flex flex-col">
-        <div class="rc-card-body flex flex-col h-full">
-          <div class="mb-4">
-            <div class="flex items-center justify-between gap-2">
-              <time class="text-xs rc-muted">9月 11, 2026</time>
-              <!-- 只显示第一个分类名 -->
-              
-            </div>
-            <h3 class="rc-serif text-lg font-bold leading-snug mt-2.5 mb-0">
-              <a href="/2026/09/11/hello-world/" class="hover:text-primary no-underline transition-colors duration-200">
-                Hello World
-              </a>
-            </h3>
-          </div>
-
-          <!-- 摘要：再兜一次去 HTML 标签、截断到 190 字，CSS 用 line-clamp-4 限 4 行 -->
-          
-            <!-- 没有摘要时用空 div 撑开，保证同排卡片底部对齐 -->
-            <div class="flex-1"></div>
-          
-
-          <!-- 标签：最多显示 2 个，多余的用 "+N" 表示 -->
-          
-
-          <div class="pt-4 mt-auto">
-            <a href="/2026/09/11/hello-world/" class="rc-btn-link">
-              Read more
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </article>
-    
   </div>
 
   <div class="mt-8">
-    <a href="/notes" class="rc-btn rc-btn-ghost">View all notes<i class="fas fa-arrow-right text-sm"></i></a>
+    <a href="/notes" class="rc-btn rc-btn-ghost">查看全部笔记<i class="fas fa-arrow-right text-sm"></i></a>
   </div>
 </section>
 
@@ -534,7 +462,7 @@
 <section class="rc-section rc-reveal">
   <div class="rc-section-head">
     <span class="rc-kicker">Work</span>
-    <h2 class="rc-section-title text-base-content">Featured Projects</h2>
+    <h2 class="rc-section-title text-base-content">Featured Projects <span class="rc-title-zh">精选项目</span></h2>
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -542,12 +470,12 @@
       <div class="rc-card rc-focus">
         <div class="rc-card-body">
           <div class="flex flex-wrap items-center gap-2">
-            <h3 class="rc-serif text-lg font-bold leading-snug">AI-Powered Research Assistant</h3>
+            <h3 class="rc-serif text-lg font-bold leading-snug">DTFM双音多频信号的合成与识别</h3>
             <span class="rc-badge rc-badge-neutral">current</span>
           </div>
           
             <p class="flex items-center gap-2 text-sm rc-muted mt-2">
-              <i class="far fa-calendar-alt"></i>2023 - Present
+              <i class="far fa-calendar-alt"></i>2026
             </p>
           
           
@@ -556,69 +484,9 @@
           <!-- 首页这里只给 Website / Code 两个按钮；完整的 Records 按钮在 /projects 页 -->
           <div class="flex flex-wrap gap-2.5 mt-5">
             
-              <a href="https://research-assistant.ai" class="rc-btn rc-btn-outline rc-btn-sm" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-external-link-alt"></i>Website
-              </a>
-            
             
               <a href="https://github.com/username/ai-research-assistant" class="rc-btn rc-btn-outline rc-btn-sm" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>Code
-              </a>
-            
-          </div>
-        </div>
-      </div>
-    
-      <div class="rc-card rc-focus">
-        <div class="rc-card-body">
-          <div class="flex flex-wrap items-center gap-2">
-            <h3 class="rc-serif text-lg font-bold leading-snug">Next-Gen Sequencing Analysis Pipeline</h3>
-            <span class="rc-badge rc-badge-neutral">current</span>
-          </div>
-          
-            <p class="flex items-center gap-2 text-sm rc-muted mt-2">
-              <i class="far fa-calendar-alt"></i>2022 - Present
-            </p>
-          
-          
-            <p class="mt-3 text-sm text-base-content/80">An automated pipeline for NGS data processing and variant calling optimized for large datasets.</p>
-          
-          <!-- 首页这里只给 Website / Code 两个按钮；完整的 Records 按钮在 /projects 页 -->
-          <div class="flex flex-wrap gap-2.5 mt-5">
-            
-            
-              <a href="https://github.com/username/ngs-pipeline" class="rc-btn rc-btn-outline rc-btn-sm" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>Code
-              </a>
-            
-          </div>
-        </div>
-      </div>
-    
-      <div class="rc-card rc-focus">
-        <div class="rc-card-body">
-          <div class="flex flex-wrap items-center gap-2">
-            <h3 class="rc-serif text-lg font-bold leading-snug">Multimodal AI for Medical Imaging</h3>
-            <span class="rc-badge rc-badge-neutral">current</span>
-          </div>
-          
-            <p class="flex items-center gap-2 text-sm rc-muted mt-2">
-              <i class="far fa-calendar-alt"></i>2024 - Present
-            </p>
-          
-          
-            <p class="mt-3 text-sm text-base-content/80">Developing AI systems that can analyze medical images alongside patient data for improved diagnosis accuracy.</p>
-          
-          <!-- 首页这里只给 Website / Code 两个按钮；完整的 Records 按钮在 /projects 页 -->
-          <div class="flex flex-wrap gap-2.5 mt-5">
-            
-              <a href="https://medai.stanford.edu" class="rc-btn rc-btn-outline rc-btn-sm" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-external-link-alt"></i>Website
-              </a>
-            
-            
-              <a href="https://github.com/stanford-medai/multimodal-diagnosis" class="rc-btn rc-btn-outline rc-btn-sm" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>Code
+                <i class="fa-brands fa-github"></i>源码
               </a>
             
           </div>
@@ -628,7 +496,7 @@
   </div>
 
   <div class="mt-8">
-    <a href="/projects" class="rc-btn rc-btn-ghost">View all projects<i class="fas fa-arrow-right text-sm"></i></a>
+    <a href="/projects" class="rc-btn rc-btn-ghost">查看全部项目<i class="fas fa-arrow-right text-sm"></i></a>
   </div>
 </section>
 
@@ -637,23 +505,23 @@
 <section class="rc-section rc-reveal">
   <div class="rc-section-head">
     <span class="rc-kicker">Reach out</span>
-    <h2 class="rc-section-title text-base-content">Get in touch</h2>
-    <p class="rc-muted mt-3 max-w-2xl">For collaborations, paper reviews or research inquiries — I'm always happy to talk science.</p>
+    <h2 class="rc-section-title text-base-content">Get in touch <span class="rc-title-zh">联系方式</span></h2>
+    <p class="rc-muted mt-3 max-w-2xl">欢迎合作、审稿或学术交流 —— 随时聊聊技术。</p>
   </div>
 
   <div class="rc-card rc-card-soft">
     <div class="rc-card-body">
       <div class="rc-contact-row">
         
-          <a href="mailto:your.email@example.com" class="rc-contact-item">
-            <i class="fas fa-envelope"></i><span>your.email@example.com</span>
+          <a href="mailto:kiriyuu@foxmail.com" class="rc-contact-item">
+            <i class="fas fa-envelope"></i><span>kiriyuu@foxmail.com</span>
           </a>
         
         <!-- 地址：配置了 google_map 就变成可点击的地图链接，否则只是纯文字 -->
         
           
             <a href="https://maps.app.goo.gl/xxxxxxxxxxx" target="_blank" rel="noopener noreferrer" class="rc-contact-item">
-              <i class="fas fa-map-marker-alt"></i><span>Room 123, Department of Biology, University of Example, 12345 City, Country</span>
+              <i class="fas fa-map-marker-alt"></i><span>Changsha 长沙, China 中国</span>
             </a>
           
         
@@ -780,7 +648,7 @@
 <!-- 返回顶部按钮 -->
 <button id="back_to_top"
   class="rc-backtop fixed bottom-8 right-8 opacity-0 pointer-events-none transition-opacity duration-300 z-50 "
-  title="Back to top" aria-label="Back to top" tabindex="0">
+  title="回到顶部" aria-label="回到顶部" tabindex="0">
   <i class="fas fa-chevron-up"></i>
 </button>
 
@@ -903,7 +771,7 @@
          __rcInitFilters     列表页筛选（年份/月份/分类/状态/关键字/标签）
          __rcSetCardExpanded / __rcInitViews / __rcInitExpand   卡片展开与视图切换
          __rcInitBadges      论文引用徽章（Altmetric / Dimensions）
-         __rcInitCollapse    碎碎念全文折叠
+         __rcInitDiaryClip   碎碎念正文截断（量溢出、决定要不要渐隐）
          __rcInitHeatmap     热力图默认滚到最新一周
          __rcInitTagCloud    知识库标签云
          __rcInitMotion      入场淡入 + 滚动聚焦动效
@@ -1015,7 +883,7 @@
       if (__rcInitToc.update) __rcInitToc.update();
     }
 
-    // 列表页筛选总控（知识库 / 专业项目 / Talks / 碎碎念共用这一份）。
+    // 列表页筛选总控（知识库 / 专业项目 / 碎碎念共用这一份）。
     // 它读的是列表项的 data-* 属性来决定"该不该显示"，所以任何列表页都能直接复用。
     //   · 支持的控件：状态 / 分类 / 年份 / 月份 / 关键字搜索 ——
     //     页面上没写的控件会被自动跳过（等于关闭），不需要改这段共享脚本；
@@ -1159,12 +1027,12 @@
       }
     }
 
-    // Detail / Compact view switching on list pages (Projects, Talks, Notes).
+    // Detail / Compact view switching on list pages (Projects, Notes).
     // Reads the last choice from localStorage and applies
     // `.rc-list--compact` to the matching `[data-view]` container, so it survives
     // a Swup swap too. Switching mode RESETS every card to that mode's default
     // state (Compact → all collapsed, Detail → all expanded).
-    // 「详细 / 紧凑」视图切换（知识库、专业项目、Talks 三页共用）。
+    // 「详细 / 紧凑」视图切换（知识库、专业项目两页共用）。
     //   · 从 localStorage 读上次的选择并套用，所以刷新后仍是上次那个视图；
     //   · 主动切换视图时，所有卡片重置成该视图的默认状态（紧凑=全收起、详细=全展开）；
     //   · 而"重新初始化"时只给没被动过的卡片设默认值，免得把用户手动展开的那张又收回去。
@@ -1279,42 +1147,19 @@
       });
     }
 
-    // 碎碎念专用：列表页渲染全文，超过约 5 行由 CSS 折起，
-    // 点「展开全文」就地展开 / 收起（不跳转）。按钮文案取自 data 属性。
-    // ⚠️ 按钮的显隐只在"未展开"时测量：展开后高度已经变了，再测会误判成
-    // "内容不长、不需要按钮"，导致再收起时按钮消失。
-    function __rcInitCollapse() {
+    // 碎碎念专用：列表页只显示正文前 5 行（由 diary.css 的 max-height 裁掉）。
+    // 这里不折叠、不展开，只干一件事 —— 量一下正文到底有没有被裁到，
+    // 把结果写到 data-overflow，CSS 再据此决定要不要显示底部那层渐隐遮罩。
+    // 为什么要量：无脑常显遮罩的话，只有一两行的短条目底部也会被蒙一层灰，
+    // 看起来像渲染坏了。
+    // ⚠️ 幂等：Swup 换页后本函数会被再调一次，每次都是重新量、重新写，不累加。
+    function __rcInitDiaryClip() {
       var page = document.getElementById('swup') || document;
-      Array.prototype.forEach.call(page.querySelectorAll('[data-collapse]'), function (box) {
-        var btn = box.parentNode ? box.parentNode.querySelector('[data-collapse-toggle]') : null;
-        if (!btn) return;
-        // 内容本身没到折叠高度时，按钮没有意义 → 藏起来。
-        // 只在「未展开」状态下测量（展开后高度会变，不能作为判断依据）。
-        if (box.getAttribute('data-expanded') !== 'true') {
-          var inner = box.querySelector('[data-collapse-inner]');
-          if (inner && inner.offsetHeight <= box.clientHeight + 2) {
-            btn.style.display = 'none';
-          } else {
-            btn.style.display = '';
-          }
-        }
-        if (btn.getAttribute('data-cl-inited')) return;
-        btn.setAttribute('data-cl-inited', '1');
-        var more = btn.getAttribute('data-label-more') || '展开全文';
-        var less = btn.getAttribute('data-label-less') || '收起';
-        btn.addEventListener('click', function () {
-          var expanded = box.getAttribute('data-expanded') === 'true';
-          var inner = box.querySelector('[data-collapse-inner]');
-          if (expanded) {
-            box.style.maxHeight = '';   // 交回 CSS 的折叠高度（约 5 行）
-            box.setAttribute('data-expanded', 'false');
-          } else {
-            // 用内容真实高度做上限，过渡才不会在长文上「先跳到一半」
-            if (inner) box.style.maxHeight = inner.offsetHeight + 'px';
-            box.setAttribute('data-expanded', 'true');
-          }
-          btn.textContent = expanded ? more : less;
-        });
+      Array.prototype.forEach.call(page.querySelectorAll('[data-diary-clip]'), function (box) {
+        // scrollHeight = 内容完整高度（即使被 max-height 裁掉了也量得到）；
+        // clientHeight = 当前实际显示高度（约 5 行）。+2 是给亚像素误差留的余量。
+        var overflowing = box.scrollHeight > box.clientHeight + 2;
+        box.setAttribute('data-overflow', overflowing ? 'true' : 'false');
       });
     }
 
@@ -1490,9 +1335,13 @@
       __rcInitTagCloud(); // before filters, so a ?tag= pre-selection is seen by the filter
       __rcInitFilters();
       __rcInitExpand();
-      __rcInitCollapse();
+      __rcInitDiaryClip();
       __rcInitHeatmap();
       __rcInitBadges();
+
+      // 图片是异步加载的：加载完高度变高，可能从「没溢出」变成「溢出」。
+      // 所以 window.load（图片全部就绪）时再量一次，避免该有渐隐时没有。
+      window.addEventListener('load', function () { __rcInitDiaryClip(); });
 
       // On mobile, the drawer is a DaisyUI checkbox. Swup swaps only #swup and
       // never reloads the page, so after clicking a menu link the checkbox would
@@ -1524,7 +1373,7 @@
             __rcInitTagCloud();
             __rcInitFilters();
             __rcInitExpand();
-            __rcInitCollapse();
+            __rcInitDiaryClip();
             __rcInitHeatmap();
             __rcInitBadges();
             // Re-run the post content pipeline (math/code/table conversion) so a

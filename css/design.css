@@ -160,6 +160,19 @@ h1, h2, h3, h4, .rc-serif {
   margin-top: 0.4rem;
 }
 
+/* 「英文 + 中文」双语标题里的中文部分（如 "Experience & background 经历与背景"）。
+   比英文主标题小一号、颜色略淡，并改用无衬线体 —— 英文走衬线、中文走黑体，
+   是中文网页里最常见也最稳的组合（衬线字体栈里没有中文字形，
+   硬让它回退会挑到宋体，在标题尺寸下会显得很旧）。 */
+.rc-title-zh {
+  font-family: var(--rc-font-sans);
+  font-size: 0.72em;
+  font-weight: 560;
+  letter-spacing: 0.02em;
+  margin-left: 0.4em;
+  color: color-mix(in oklab, var(--rc-ink) 72%, transparent);
+}
+
 /* --------------------------------------------------------------------------
    4. Cards
    -------------------------------------------------------------------------- */
@@ -805,7 +818,7 @@ a.rc-contact-item:hover { color: var(--rc-accent); }
 }
 
 /* --------------------------------------------------------------------------
-   11. Timeline (projects / talks / cv)
+   11. Timeline (projects / cv)
    -------------------------------------------------------------------------- */
 .rc-timeline {
   position: relative;
@@ -1329,7 +1342,7 @@ html.js .rc-reveal.is-visible {
    the full badge set, while a collapsed one shows only the Dimensions badge. */
 
 /* --------------------------------------------------------------------------
-   20. Detail / Compact view toggle (Projects, Talks, Notes)
+   20. Detail / Compact view toggle (Projects, Notes)
    -------------------------------------------------------------------------- */
 .rc-view-toggle {
   display: inline-flex;

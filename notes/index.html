@@ -143,34 +143,14 @@
   <div class="p-5 mt-auto border-t" style="border-color: color-mix(in oklab, var(--rc-line) 70%, transparent);">
     <div class="flex justify-center items-center gap-2">
       
-        <a href="https://scholar.google.com/citations?user=YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="Google Scholar">
-          <i class="fa-brands fa-google-scholar text-xl block"></i>
-        </a>
       
       
-        <a href="https://orcid.org/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="ORCID">
-          <i class="fa-brands fa-orcid text-xl block"></i>
-        </a>
       
-      
-        <a href="https://www.researchgate.net/profile/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="ResearchGate">
-          <i class="fa-brands fa-researchgate text-xl block"></i>
-        </a>
-      
-      
-        <a href="https://github.com/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="GitHub">
+        <a href="https://github.com/kiri-yuu" class="rc-social" target="_blank" rel="noopener noreferrer" title="GitHub">
           <i class="fa-brands fa-github text-xl block"></i>
         </a>
       
       
-        <a href="https://linkedin.com/in/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-          <i class="fa-brands fa-linkedin text-xl block"></i>
-        </a>
-      
-      
-        <a href="https://twitter.com/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="Twitter">
-          <i class="fa-brands fa-twitter text-xl block"></i>
-        </a>
       
     </div>
   </div>
@@ -195,7 +175,7 @@
     <div class="drawer-content flex flex-col">
       <!-- Mobile navbar -->
       <div class="rc-nav w-full navbar fixed top-0 left-0 right-0 z-40">
-        <label for="my-drawer" class="rc-nav-icon" aria-label="Toggle menu">
+        <label for="my-drawer" class="rc-nav-icon" aria-label="切换菜单">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -305,34 +285,14 @@
   <div class="p-5 mt-auto border-t" style="border-color: color-mix(in oklab, var(--rc-line) 70%, transparent);">
     <div class="flex justify-center items-center gap-2">
       
-        <a href="https://scholar.google.com/citations?user=YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="Google Scholar">
-          <i class="fa-brands fa-google-scholar text-xl block"></i>
-        </a>
       
       
-        <a href="https://orcid.org/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="ORCID">
-          <i class="fa-brands fa-orcid text-xl block"></i>
-        </a>
       
-      
-        <a href="https://www.researchgate.net/profile/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="ResearchGate">
-          <i class="fa-brands fa-researchgate text-xl block"></i>
-        </a>
-      
-      
-        <a href="https://github.com/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="GitHub">
+        <a href="https://github.com/kiri-yuu" class="rc-social" target="_blank" rel="noopener noreferrer" title="GitHub">
           <i class="fa-brands fa-github text-xl block"></i>
         </a>
       
       
-        <a href="https://linkedin.com/in/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-          <i class="fa-brands fa-linkedin text-xl block"></i>
-        </a>
-      
-      
-        <a href="https://twitter.com/YOUR_ID" class="rc-social" target="_blank" rel="noopener noreferrer" title="Twitter">
-          <i class="fa-brands fa-twitter text-xl block"></i>
-        </a>
       
     </div>
   </div>
@@ -352,44 +312,42 @@
 <div class="rc-section">
   <header class="rc-section-head">
     <span class="rc-kicker">Research Notes</span>
-    <h1 class="rc-section-title">Notes &amp; observations</h1>
-    <p class="rc-muted mt-3 max-w-2xl">Short-form writeups on methods, tools and reproducible research. Filter by category, year or keyword.</p>
+    <h1 class="rc-section-title">Notes &amp; observations <span class="rc-title-zh">笔记与观察</span></h1>
+    <p class="rc-muted mt-3 max-w-2xl">短篇记录：方法、工具与可复现的实践。可按类别、年份或关键词筛选。</p>
   </header>
 
   <!-- Filters -->
   <div class="rc-filter" data-filter>
     <div class="rc-filter-field">
-      <label class="rc-filter-label" for="categoryFilter">Category</label>
+      <label class="rc-filter-label" for="categoryFilter">Category 类别</label>
       <select class="rc-select w-full" id="categoryFilter" name="categoryFilter" data-filter-type="category">
-        <option value="">All Categories</option>
+        <option value="">全部类别</option>
         
       </select>
     </div>
 
     <div class="rc-filter-field">
-      <label class="rc-filter-label" for="yearFilter">Year</label>
+      <label class="rc-filter-label" for="yearFilter">Year 年份</label>
       <select class="rc-select w-full" id="yearFilter" name="yearFilter" data-filter-type="year">
-        <option value="">All Years</option>
-        
-          <option value="2026">2026</option>
+        <option value="">全部年份</option>
         
       </select>
     </div>
 
     <div class="rc-filter-field grow">
-      <label class="rc-filter-label" for="searchInput">Search</label>
-      <input type="text" placeholder="Search notes..." class="rc-input w-full" id="searchInput" data-filter-type="search" />
+      <label class="rc-filter-label" for="searchInput">Search 搜索</label>
+      <input type="text" placeholder="搜索笔记…" class="rc-input w-full" id="searchInput" data-filter-type="search" />
     </div>
 
     
     <div class="ml-auto">
       
-<div class="rc-view-toggle" data-view-toggle role="group" aria-label="View density">
+<div class="rc-view-toggle" data-view-toggle role="group" aria-label="视图密度">
   <button type="button" data-view-mode="detail" class="is-active" aria-pressed="true">
-    <i class="fa-solid fa-list-ul"></i> Detail
+    <i class="fa-solid fa-list-ul"></i> 详细
   </button>
   <button type="button" data-view-mode="compact" aria-pressed="false">
-    <i class="fa-solid fa-table-cells"></i> Compact
+    <i class="fa-solid fa-table-cells"></i> 紧凑
   </button>
 </div>
 
@@ -402,61 +360,19 @@
   
 
   <div class="text-sm rc-muted mt-4 mb-10">
-    <span id="resultsCount" data-filter-count>Showing all 1 notes</span>
+    <span id="resultsCount" data-filter-count data-count-all="共 %d 篇笔记" data-count-some="筛选出 %d 篇">共 0 篇笔记</span>
   </div>
 
   <!-- Notes grid -->
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 rc-notes" id="notesContainer" data-filter-list data-view data-view-key="rc-view-notes">
-    
-      <div class="note-item rc-reveal" data-filter-item
-           data-category=""
-           data-year="2026"
-           data-title="hello world"
-           data-text=""
-           data-tags="">
-        <article class="rc-card rc-focus flex flex-col h-full">
-          <div class="rc-card-body flex flex-col h-full">
-            <div class="mb-4 rc-note-head">
-              <div class="flex items-center justify-between mb-2">
-                <time class="text-xs rc-muted font-medium">Sep 11, 2026</time>
-                
-              </div>
-              <h2 class="text-lg font-semibold leading-tight">
-                <a href="/2026/09/11/hello-world/" class="rc-stretched hover:text-[color-mix(in_oklab,var(--rc-accent)_80%,transparent)] transition-colors duration-200 no-underline">
-                  Hello World
-                </a>
-              </h2>
-            </div>
-
-            
-              <div class="flex-1"></div>
-            
-
-            <div class="flex items-center justify-between mt-5 rc-note-foot">
-              
-                <div></div>
-              
-              <a href="/2026/09/11/hello-world/" class="rc-btn-link" aria-label="Read more">
-                Read
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-              </a>
-            </div>
-            
-<button type="button" class="rc-expand" aria-label="Toggle details" aria-expanded="false">
-  <i class="fa-solid fa-chevron-down"></i>
-</button>
-
-          </div>
-        </article>
-      </div>
     
   </div>
 
   <!-- Empty state -->
   <div id="emptyState" class="text-center py-20 hidden" data-filter-empty>
     <div class="text-6xl opacity-20 mb-4">📝</div>
-    <h3 class="text-xl font-semibold mb-2">No notes found</h3>
-    <p class="rc-muted">Try adjusting your search criteria</p>
+    <h3 class="text-xl font-semibold mb-2">没有找到笔记</h3>
+    <p class="rc-muted">试试调整筛选条件</p>
   </div>
 
   
@@ -569,7 +485,7 @@
 <!-- 返回顶部按钮 -->
 <button id="back_to_top"
   class="rc-backtop fixed bottom-8 right-8 opacity-0 pointer-events-none transition-opacity duration-300 z-50 "
-  title="Back to top" aria-label="Back to top" tabindex="0">
+  title="回到顶部" aria-label="回到顶部" tabindex="0">
   <i class="fas fa-chevron-up"></i>
 </button>
 
@@ -692,7 +608,7 @@
          __rcInitFilters     列表页筛选（年份/月份/分类/状态/关键字/标签）
          __rcSetCardExpanded / __rcInitViews / __rcInitExpand   卡片展开与视图切换
          __rcInitBadges      论文引用徽章（Altmetric / Dimensions）
-         __rcInitCollapse    碎碎念全文折叠
+         __rcInitDiaryClip   碎碎念正文截断（量溢出、决定要不要渐隐）
          __rcInitHeatmap     热力图默认滚到最新一周
          __rcInitTagCloud    知识库标签云
          __rcInitMotion      入场淡入 + 滚动聚焦动效
@@ -804,7 +720,7 @@
       if (__rcInitToc.update) __rcInitToc.update();
     }
 
-    // 列表页筛选总控（知识库 / 专业项目 / Talks / 碎碎念共用这一份）。
+    // 列表页筛选总控（知识库 / 专业项目 / 碎碎念共用这一份）。
     // 它读的是列表项的 data-* 属性来决定"该不该显示"，所以任何列表页都能直接复用。
     //   · 支持的控件：状态 / 分类 / 年份 / 月份 / 关键字搜索 ——
     //     页面上没写的控件会被自动跳过（等于关闭），不需要改这段共享脚本；
@@ -948,12 +864,12 @@
       }
     }
 
-    // Detail / Compact view switching on list pages (Projects, Talks, Notes).
+    // Detail / Compact view switching on list pages (Projects, Notes).
     // Reads the last choice from localStorage and applies
     // `.rc-list--compact` to the matching `[data-view]` container, so it survives
     // a Swup swap too. Switching mode RESETS every card to that mode's default
     // state (Compact → all collapsed, Detail → all expanded).
-    // 「详细 / 紧凑」视图切换（知识库、专业项目、Talks 三页共用）。
+    // 「详细 / 紧凑」视图切换（知识库、专业项目两页共用）。
     //   · 从 localStorage 读上次的选择并套用，所以刷新后仍是上次那个视图；
     //   · 主动切换视图时，所有卡片重置成该视图的默认状态（紧凑=全收起、详细=全展开）；
     //   · 而"重新初始化"时只给没被动过的卡片设默认值，免得把用户手动展开的那张又收回去。
@@ -1068,42 +984,19 @@
       });
     }
 
-    // 碎碎念专用：列表页渲染全文，超过约 5 行由 CSS 折起，
-    // 点「展开全文」就地展开 / 收起（不跳转）。按钮文案取自 data 属性。
-    // ⚠️ 按钮的显隐只在"未展开"时测量：展开后高度已经变了，再测会误判成
-    // "内容不长、不需要按钮"，导致再收起时按钮消失。
-    function __rcInitCollapse() {
+    // 碎碎念专用：列表页只显示正文前 5 行（由 diary.css 的 max-height 裁掉）。
+    // 这里不折叠、不展开，只干一件事 —— 量一下正文到底有没有被裁到，
+    // 把结果写到 data-overflow，CSS 再据此决定要不要显示底部那层渐隐遮罩。
+    // 为什么要量：无脑常显遮罩的话，只有一两行的短条目底部也会被蒙一层灰，
+    // 看起来像渲染坏了。
+    // ⚠️ 幂等：Swup 换页后本函数会被再调一次，每次都是重新量、重新写，不累加。
+    function __rcInitDiaryClip() {
       var page = document.getElementById('swup') || document;
-      Array.prototype.forEach.call(page.querySelectorAll('[data-collapse]'), function (box) {
-        var btn = box.parentNode ? box.parentNode.querySelector('[data-collapse-toggle]') : null;
-        if (!btn) return;
-        // 内容本身没到折叠高度时，按钮没有意义 → 藏起来。
-        // 只在「未展开」状态下测量（展开后高度会变，不能作为判断依据）。
-        if (box.getAttribute('data-expanded') !== 'true') {
-          var inner = box.querySelector('[data-collapse-inner]');
-          if (inner && inner.offsetHeight <= box.clientHeight + 2) {
-            btn.style.display = 'none';
-          } else {
-            btn.style.display = '';
-          }
-        }
-        if (btn.getAttribute('data-cl-inited')) return;
-        btn.setAttribute('data-cl-inited', '1');
-        var more = btn.getAttribute('data-label-more') || '展开全文';
-        var less = btn.getAttribute('data-label-less') || '收起';
-        btn.addEventListener('click', function () {
-          var expanded = box.getAttribute('data-expanded') === 'true';
-          var inner = box.querySelector('[data-collapse-inner]');
-          if (expanded) {
-            box.style.maxHeight = '';   // 交回 CSS 的折叠高度（约 5 行）
-            box.setAttribute('data-expanded', 'false');
-          } else {
-            // 用内容真实高度做上限，过渡才不会在长文上「先跳到一半」
-            if (inner) box.style.maxHeight = inner.offsetHeight + 'px';
-            box.setAttribute('data-expanded', 'true');
-          }
-          btn.textContent = expanded ? more : less;
-        });
+      Array.prototype.forEach.call(page.querySelectorAll('[data-diary-clip]'), function (box) {
+        // scrollHeight = 内容完整高度（即使被 max-height 裁掉了也量得到）；
+        // clientHeight = 当前实际显示高度（约 5 行）。+2 是给亚像素误差留的余量。
+        var overflowing = box.scrollHeight > box.clientHeight + 2;
+        box.setAttribute('data-overflow', overflowing ? 'true' : 'false');
       });
     }
 
@@ -1279,9 +1172,13 @@
       __rcInitTagCloud(); // before filters, so a ?tag= pre-selection is seen by the filter
       __rcInitFilters();
       __rcInitExpand();
-      __rcInitCollapse();
+      __rcInitDiaryClip();
       __rcInitHeatmap();
       __rcInitBadges();
+
+      // 图片是异步加载的：加载完高度变高，可能从「没溢出」变成「溢出」。
+      // 所以 window.load（图片全部就绪）时再量一次，避免该有渐隐时没有。
+      window.addEventListener('load', function () { __rcInitDiaryClip(); });
 
       // On mobile, the drawer is a DaisyUI checkbox. Swup swaps only #swup and
       // never reloads the page, so after clicking a menu link the checkbox would
@@ -1313,7 +1210,7 @@
             __rcInitTagCloud();
             __rcInitFilters();
             __rcInitExpand();
-            __rcInitCollapse();
+            __rcInitDiaryClip();
             __rcInitHeatmap();
             __rcInitBadges();
             // Re-run the post content pipeline (math/code/table conversion) so a

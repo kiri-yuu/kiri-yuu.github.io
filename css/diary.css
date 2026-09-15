@@ -4,7 +4,7 @@
    由 layout/diary.ejs 按需引入（只在碎碎念页加载，其它页面不受影响）。
    包含两块：
      1) 发布热力图（最近一年，GitHub 贡献图风格）
-     2) 全文折叠（默认显示约 5 行，点按钮就地展开）
+     2) 正文截断（最多 5 行，超出部分裁掉并在底部渐隐）
    颜色全部使用 design.css 里定义的 CSS 变量（--rc-*），
    因此会自动跟随明暗模式与当前配色方案变化。
    ========================================================================== */
@@ -68,21 +68,24 @@
 .rc-heatmap-cell:hover { transform: scale(1.25); }
 
 /* --------------------------------------------------------------------------
-   2. 全文折叠（碎碎念列表）
+   2. 正文截断（碎碎念列表）
+   --------------------------------------------------------------------------
+   正文最多显示 5 行，多出来的被裁掉；底部再用一层渐隐遮罩提示「还有内容」。
+   ⚠️ 遮罩默认是【关】的，只有真的溢出的条目才由脚本打开：
+       layout.ejs 的 __rcInitDiaryClip() 量完 scrollHeight 会把结果写到
+       data-overflow 上。若不这样，只有一两行的短条目底部也会被蒙一层灰，
+       看起来像渲染坏了。
    -------------------------------------------------------------------------- */
 .rc-diary-content {
   position: relative;
-  max-height: calc(5 * 1.7em);   /* 默认只显示约 5 行 */
+  max-height: calc(5 * 1.7em);   /* 只显示约 5 行，多出来的裁掉 */
   overflow: hidden;
   font-size: 0.9rem;
   line-height: 1.7;
   color: color-mix(in oklab, var(--rc-ink) 80%, transparent);
-  transition: max-height 0.3s var(--rc-ease);
 }
-/* 展开时的兜底高度；脚本会改写为精确像素值，让过渡更顺滑 */
-.rc-diary-content[data-expanded="true"] { max-height: 300em; }
 
-/* 折起时底部的渐隐遮罩，提示「下面还有内容」 */
+/* 底部渐隐遮罩：默认不显示（opacity 0），确认溢出后才打开 */
 .rc-diary-content::after {
   content: "";
   position: absolute;
@@ -91,10 +94,11 @@
   bottom: 0;
   height: 2.6em;
   pointer-events: none;
+  opacity: 0;
   background: linear-gradient(to bottom, transparent, var(--rc-bg) 85%);
-  transition: opacity 0.3s var(--rc-ease);
+  transition: opacity 0.2s var(--rc-ease);
 }
-.rc-diary-content[data-expanded="true"]::after { opacity: 0; }
+.rc-diary-content[data-overflow="true"]::after { opacity: 1; }
 
 /* 全文里的标题 / 图片等元素在卡片内收敛一些，避免破坏列表排版 */
 .rc-diary-content h1,
