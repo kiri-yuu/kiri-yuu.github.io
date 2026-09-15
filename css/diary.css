@@ -1,0 +1,129 @@
+/* ==========================================================================
+   Diary（碎碎念）— 页面专属样式
+   --------------------------------------------------------------------------
+   由 layout/diary.ejs 按需引入（只在碎碎念页加载，其它页面不受影响）。
+   包含两块：
+     1) 发布热力图（最近一年，GitHub 贡献图风格）
+     2) 全文折叠（默认显示约 5 行，点按钮就地展开）
+   颜色全部使用 design.css 里定义的 CSS 变量（--rc-*），
+   因此会自动跟随明暗模式与当前配色方案变化。
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. 发布热力图
+   -------------------------------------------------------------------------- */
+.rc-heatmap-card .rc-card-body { padding: 1.25rem; }
+
+.rc-heatmap-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.rc-heatmap-legend-text {
+  margin: 0 2px;
+  font-size: 0.7rem;
+  color: color-mix(in oklab, var(--rc-ink) 55%, transparent);
+}
+
+/* 53 列在小屏放不下时横向滚动（脚本默认滚到最右 = 最新的一周） */
+.rc-heatmap-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 4px;
+}
+.rc-heatmap-inner { display: inline-block; }
+
+.rc-heatmap-months {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 4px;
+}
+.rc-heatmap-month {
+  flex: 0 0 12px;
+  width: 12px;
+  font-size: 10px;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: visible;   /* 允许「9 月」这类标签溢出到旁边空白格子 */
+  color: color-mix(in oklab, var(--rc-ink) 55%, transparent);
+}
+
+.rc-heatmap-grid { display: flex; gap: 3px; }
+.rc-heatmap-col { display: flex; flex-direction: column; gap: 3px; }
+
+.rc-heatmap-cell {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background: color-mix(in oklab, var(--rc-line) 60%, transparent);
+  transition: transform 0.12s var(--rc-ease);
+}
+/* 颜色越深 = 当天发的碎碎念越多（0 级无内容，1~4 级逐级加深） */
+.rc-heatmap-cell[data-level="1"] { background: color-mix(in oklab, var(--rc-accent) 30%, transparent); }
+.rc-heatmap-cell[data-level="2"] { background: color-mix(in oklab, var(--rc-accent) 50%, transparent); }
+.rc-heatmap-cell[data-level="3"] { background: color-mix(in oklab, var(--rc-accent) 72%, transparent); }
+.rc-heatmap-cell[data-level="4"] { background: color-mix(in oklab, var(--rc-accent) 96%, transparent); }
+.rc-heatmap-cell[data-future="1"] { visibility: hidden; }   /* 本周尚未到来的日子 */
+.rc-heatmap-cell:hover { transform: scale(1.25); }
+
+/* --------------------------------------------------------------------------
+   2. 全文折叠（碎碎念列表）
+   -------------------------------------------------------------------------- */
+.rc-diary-content {
+  position: relative;
+  max-height: calc(5 * 1.7em);   /* 默认只显示约 5 行 */
+  overflow: hidden;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: color-mix(in oklab, var(--rc-ink) 80%, transparent);
+  transition: max-height 0.3s var(--rc-ease);
+}
+/* 展开时的兜底高度；脚本会改写为精确像素值，让过渡更顺滑 */
+.rc-diary-content[data-expanded="true"] { max-height: 300em; }
+
+/* 折起时底部的渐隐遮罩，提示「下面还有内容」 */
+.rc-diary-content::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2.6em;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, var(--rc-bg) 85%);
+  transition: opacity 0.3s var(--rc-ease);
+}
+.rc-diary-content[data-expanded="true"]::after { opacity: 0; }
+
+/* 全文里的标题 / 图片等元素在卡片内收敛一些，避免破坏列表排版 */
+.rc-diary-content h1,
+.rc-diary-content h2,
+.rc-diary-content h3,
+.rc-diary-content h4 {
+  margin: 0.9em 0 0.4em;
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+.rc-diary-content p { margin: 0.5em 0; }
+.rc-diary-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--rc-radius-sm);
+}
+.rc-diary-content ul,
+.rc-diary-content ol { margin: 0.5em 0; padding-left: 1.3em; }
+.rc-diary-content li { margin: 0.2em 0; }
+.rc-diary-content pre { white-space: pre-wrap; word-break: break-word; }
+.rc-diary-content blockquote {
+  margin: 0.6em 0;
+  padding-left: 0.8em;
+  border-left: 3px solid color-mix(in oklab, var(--rc-accent) 45%, transparent);
+  color: color-mix(in oklab, var(--rc-ink) 65%, transparent);
+}
+
+/* 相关链接区：与正文之间用一条细分隔线隔开 */
+.rc-diary-links {
+  border-top: 1px solid color-mix(in oklab, var(--rc-line) 60%, transparent);
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>欢迎来到碎碎念</title>
+      <link href="/2026/09/15/welcome-to-diary/"/>
+      <url>/2026/09/15/welcome-to-diary/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>这是一条<strong>示例碎碎念</strong>，看懂用法后可以直接删掉<br>（文件在 <code>source/_posts/welcome-to-diary.md</code>）。</p></blockquote><p>碎碎念适合写短句、日常和临时想法。它在这套站里有几个特点：</p><ul><li><strong>只出现在 <code>/diary/</code> 页</strong>，不会混进知识库、首页或归档 —— 靠的是文章开头的<br><code>categories: [碎碎念]</code> 这一行（分类名可在主题配置 <code>diary.category</code> 里改）；</li><li><strong>列表页直接显示全文</strong>，超过五行会自动折起，点「展开全文」就地展开，不用跳页；</li><li><strong>上方有发布热力图</strong>：哪天写了东西，那天的格子就会有颜色，越深表示写得越多；</li><li><strong>可以挂相关文章按钮</strong>：在文件开头的 <code>links:</code> 里写标题和地址，<br>就会在卡片底部出现一排跳转按钮（往下看，这条就有）。</li></ul><p>写新的碎碎念时，在 <code>source/_posts/</code> 下新建一个 <code>.md</code> 文件，<br>把上面这段 front-matter 复制过去、改掉标题和日期就行。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 碎碎念 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2026/09/11/hello-world/"/>
+      <url>/2026/09/11/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="language-bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
