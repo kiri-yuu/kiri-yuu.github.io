@@ -15,7 +15,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>cv</title>
+<title>把整理项目报告蒸馏成了skill</title>
 <meta name="description" content="存放工程/学习/日常碎片">
 <meta name="keywords" content="">
 <meta name="author" content="Kiri">
@@ -27,14 +27,14 @@
 <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
 <!-- Open Graph：分享到微信/QQ/微博等平台时，抓取标题与描述用这几条 -->
-<meta property="og:title" content="cv">
+<meta property="og:title" content="把整理项目报告蒸馏成了skill">
 <meta property="og:description" content="存放工程/学习/日常碎片">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://kiri-yuu.github.io/cv/index.html">
+<meta property="og:url" content="https://kiri-yuu.github.io/2026/09/16/%E6%8A%8A%E6%95%B4%E7%90%86%E9%A1%B9%E7%9B%AE%E6%8A%A5%E5%91%8A%E8%92%B8%E9%A6%8F%E6%88%90%E4%BA%86skill/">
 
 <!-- Twitter Card：同上，针对 Twitter/X 的分享卡片（summary = 小图卡片） -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="cv">
+<meta name="twitter:title" content="把整理项目报告蒸馏成了skill">
 <meta name="twitter:description" content="存放工程/学习/日常碎片">
 
 <!-- Fonts：Google Fonts 在线字体。preconnect 是提前建立连接、略微加速加载。
@@ -309,437 +309,118 @@
   <!-- Content area for Desktop (whole-body partial swapping via Swup) -->
   <div id="swup" class="lg:ml-80 pt-20 px-4 lg:px-10 pb-8 flex-1 min-h-0">
     
+<div class="lg:grid lg:grid-cols-[minmax(0,1fr)_240px] lg:gap-12">
+<article class="mx-auto max-w-3xl rc-reveal w-full">
 
-<!-- lg 屏幕下分成两栏：左边正文（minmax(0,1fr) 保证可压缩），右边 240px 的目录 -->
-<div class="rc-section lg:grid lg:grid-cols-[minmax(0,1fr)_240px] lg:gap-12">
-  <div class="min-w-0">
-  <!-- 页头：标题 + 可选的"下载 PDF"按钮 -->
-  <header class="flex flex-wrap items-end justify-between gap-4 mb-10">
-    <div>
-      <span class="rc-kicker">Curriculum Vitae</span>
-      <h1 class="rc-section-title">Experience &amp; background <span class="rc-title-zh">经历与背景</span></h1>
+  <!-- Post Header -->
+  <header class="mb-12">
+    <div class="flex flex-wrap items-center gap-3 text-sm rc-muted mb-5">
+      
+        <span class="rc-kicker">碎碎念</span>
+      
+      <span class="flex items-center gap-2">
+        <i class="fa-regular fa-calendar"></i>
+        <time datetime="2026-09-16T08:47:01.000Z">2026-09-16</time>
+      </span>
+      <span class="flex items-center gap-2">
+        <i class="fa-solid fa-clock"></i>
+        <span>约 1 分钟</span>
+      </span>
     </div>
+
+    <h1 class="text-3xl md:text-4xl font-bold rc-serif leading-tight tracking-tight">把整理项目报告蒸馏成了skill</h1>
+
     
-      <a href="/files/cv-template.pdf" class="rc-btn rc-btn-accent" target="_blank" rel="noopener noreferrer" title="下载 PDF" download>
-        <i class="fa-solid fa-file-arrow-down"></i>
-        下载 PDF
-      </a>
+      <div class="flex flex-wrap gap-2 mt-5">
+        
+          
+            <a href="/diary/" class="rc-badge">
+              碎碎念
+            </a>
+          
+        
+        
+      </div>
     
   </header>
 
-  <!-- 快捷跳转：每个按钮是一个 #锚点，点了平滑滚到对应板块 -->
-  <nav class="flex flex-wrap gap-2 mb-12">
-    
-      <a href="#research" class="rc-btn rc-btn-outline rc-btn-sm">Research Interests 研究兴趣</a>
-    
-    
-      <a href="#education" class="rc-btn rc-btn-outline rc-btn-sm">Education 教育</a>
-    
-    
-      <a href="#experience" class="rc-btn rc-btn-outline rc-btn-sm">Experience 经历</a>
-    
-    
-      <a href="#skills" class="rc-btn rc-btn-outline rc-btn-sm">Skills 技能</a>
-    
-    
-      <a href="#awards" class="rc-btn rc-btn-outline rc-btn-sm">Awards 荣誉</a>
-    
-    
-      <a href="#languages" class="rc-btn rc-btn-outline rc-btn-sm">Languages 语言</a>
-    
-    
-  </nav>
+  <!-- Post Content -->
+  <div class="post-content" id="processed-content">
+    <link rel="stylesheet" href="/css/post.css">
+    <p>打包成plugin包挂在仓库上了，科技改变生活捏嘿嘿！目前只弄了数据集的报告部分，别的明日再议。</p>
 
-  <!-- ====== 01 研究兴趣：读 cv.yml 的 research_interests 数组 ====== -->
-  <!-- 注意：这一段与首页共用同一份数据（cv.yml 里只写一次）。
-       判断条件用 site.data.cv.research_interests 本身，而不接受 cv_sections 开关：
-       因为这个板块不是 CV 固有的六个段之一，而是从首页借过来的。
-       想让它从 CV 页消失：去 cv.yml 把整段 research_interests 删或注释掉。 -->
-  
-  <section class="mb-14" id="research">
-    <div class="flex items-center gap-3 mb-6">
-      <span class="rc-kicker">01</span>
-      <h2 class="text-2xl font-semibold">Research Interests <span class="rc-title-zh">研究兴趣</span></h2>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-      
-        <div class="rc-card rc-focus rc-reveal">
-          <div class="rc-card-body">
-            <h3 class="rc-serif text-lg font-bold">Vibe Coding</h3>
-            
-              <p class="rc-muted text-sm mt-2">利用AI辅助编程快速构建网页与各类工具原型，探索人机协同开发的工作流与实践技巧</p>
-            
-            
-              <div class="flex flex-wrap gap-1.5 mt-4">
-                
-                  <span class="rc-tag">AI辅助开发</span>
-                
-                  <span class="rc-tag">原型快速搭建</span>
-                
-                  <span class="rc-tag">Web开发</span>
-                
-                  <span class="rc-tag">工具开发</span>
-                
-              </div>
-            
-          </div>
-        </div>
-      
-        <div class="rc-card rc-focus rc-reveal">
-          <div class="rc-card-body">
-            <h3 class="rc-serif text-lg font-bold">嵌入式Linux开发</h3>
-            
-              <p class="rc-muted text-sm mt-2">研究嵌入式Linux内核裁剪、驱动开发、交叉编译与嵌入式应用程序部署</p>
-            
-            
-              <div class="flex flex-wrap gap-1.5 mt-4">
-                
-                  <span class="rc-tag">嵌入式Linux</span>
-                
-                  <span class="rc-tag">内核裁剪</span>
-                
-                  <span class="rc-tag">设备驱动</span>
-                
-                  <span class="rc-tag">交叉编译</span>
-                
-              </div>
-            
-          </div>
-        </div>
-      
-        <div class="rc-card rc-focus rc-reveal">
-          <div class="rc-card-body">
-            <h3 class="rc-serif text-lg font-bold">Office软件应用</h3>
-            
-              <p class="rc-muted text-sm mt-2">熟练使用office办公软件，掌握文档处理、数据分析与自动化办公技巧,同时可以与ai agent工具结合提高工作效率</p>
-            
-            
-              <div class="flex flex-wrap gap-1.5 mt-4">
-                
-                  <span class="rc-tag">Office办公软件</span>
-                
-                  <span class="rc-tag">文档处理</span>
-                
-                  <span class="rc-tag">数据分析</span>
-                
-                  <span class="rc-tag">自动化办公</span>
-                
-                  <span class="rc-tag">AI agent工具</span>
-                
-              </div>
-            
-          </div>
-        </div>
-      
-    </div>
-  </section>
-  
+  </div>
 
-  <!-- 02 教育经历：遍历 cv.yml 的 education 数组（字段：degree / period / institution / description） -->
+  <!-- 相关文章：在 front-matter 里写了 links 才会出现。
+       写法：  links:
+                 - title: "相关：网络是怎么联通的"
+                   url: /notes/network/          （站内路径）
+                 - title: "参考仓库"
+                   url: https://github.com/...   （外部链接，新标签打开） -->
   
-  <section class="mb-14" id="education">
-    <div class="flex items-center gap-3 mb-6">
-      <span class="rc-kicker">02</span>
-      <h2 class="text-2xl font-semibold">Education <span class="rc-title-zh">教育经历</span></h2>
-    </div>
-    <!-- rc-timeline = 时间轴样式：左侧一条竖线，每项一个圆点 -->
-    <div class="rc-timeline">
-      
-        <div class="rc-timeline-item rc-reveal">
-          <span class="rc-timeline-dot"></span>
-          <div class="rc-card rc-focus">
-            <div class="rc-card-body">
-              <div class="flex items-start justify-between gap-3">
-                <h3 class="text-lg font-semibold">中南大学 电子信息工程 本科</h3>
-                <span class="rc-badge-soft shrink-0 mt-0.5">2024 - Present</span>
-              </div>
-              <p class="mt-1 text-sm font-medium text-base-content/80">Central South University, Bachelor of Engineering in Electronic Information Engineering</p>
-              
-                <p class="mt-2 text-sm rc-muted">仍在就读大学本科,大三决定放弃躺平开始奋斗.目前热火朝天努力中(*/ω＼*)</p>
-              
-            </div>
-          </div>
-        </div>
-      
-    </div>
-  </section>
   
-
-  <!-- 03 工作经历：字段 position / period / institution / description / responsibilities（数组，逐条带勾） -->
-  
-  <section class="mb-14" id="experience">
-    <div class="flex items-center gap-3 mb-6">
-      <span class="rc-kicker">03</span>
-      <h2 class="text-2xl font-semibold">Professional Experience <span class="rc-title-zh">工作经历</span></h2>
-    </div>
-    <div class="rc-timeline">
-      
-        <div class="rc-timeline-item rc-reveal">
-          <span class="rc-timeline-dot"></span>
-          <div class="rc-card rc-focus">
-            <div class="rc-card-body">
-              <div class="flex items-start justify-between gap-3">
-                <h3 class="text-lg font-semibold">浙江吉利控股集团有限公司 实习生</h3>
-                <span class="rc-badge-soft shrink-0 mt-0.5">2026/04 - 2026/08</span>
-              </div>
-              <p class="mt-1 text-sm font-medium text-base-content/80">Intern, Zhejiang Geely Holding Group Co., Ltd.</p>
-              <p class="mt-2 text-sm rc-muted">在吉利控股集团云计算-私有云小组实习</p>
-              
-                <ul class="mt-3 space-y-1.5">
-                  
-                    <li class="flex items-start gap-2 text-sm rc-muted">
-                      <!-- 那个内联 SVG 就是每条前面的小对勾图标 -->
-                      <svg class="mt-1 shrink-0 text-[color-mix(in_oklab,var(--rc-accent)_80%,transparent)]" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-                      <span>参与了私有云的部署与维护,熟悉了云计算的基本概念</span>
-                    </li>
-                  
-                    <li class="flex items-start gap-2 text-sm rc-muted">
-                      <!-- 那个内联 SVG 就是每条前面的小对勾图标 -->
-                      <svg class="mt-1 shrink-0 text-[color-mix(in_oklab,var(--rc-accent)_80%,transparent)]" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-                      <span>自学Linux相关语法和工具,初识docker/k8s/云服务器</span>
-                    </li>
-                  
-                    <li class="flex items-start gap-2 text-sm rc-muted">
-                      <!-- 那个内联 SVG 就是每条前面的小对勾图标 -->
-                      <svg class="mt-1 shrink-0 text-[color-mix(in_oklab,var(--rc-accent)_80%,transparent)]" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-                      <span>初入职场,了解到了大公司的运作体系与人员框架</span>
-                    </li>
-                  
-                    <li class="flex items-start gap-2 text-sm rc-muted">
-                      <!-- 那个内联 SVG 就是每条前面的小对勾图标 -->
-                      <svg class="mt-1 shrink-0 text-[color-mix(in_oklab,var(--rc-accent)_80%,transparent)]" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-                      <span>在团队中学习了如何协作与沟通,熟悉了工作的安全要求和流程必要性</span>
-                    </li>
-                  
-                </ul>
-              
-            </div>
-          </div>
-        </div>
-      
-        <div class="rc-timeline-item rc-reveal">
-          <span class="rc-timeline-dot"></span>
-          <div class="rc-card rc-focus">
-            <div class="rc-card-body">
-              <div class="flex items-start justify-between gap-3">
-                <h3 class="text-lg font-semibold">湖南太康电子信息技术有限公司 实习生</h3>
-                <span class="rc-badge-soft shrink-0 mt-0.5">2026/08 - Present</span>
-              </div>
-              <p class="mt-1 text-sm font-medium text-base-content/80">Hunan Taikang Electronic Information Technology Co., Ltd.</p>
-              <p class="mt-2 text-sm rc-muted">了解并参与公司的穿墙雷达项目,熟悉了雷达的工作原理和信号处理流程</p>
-              
-                <ul class="mt-3 space-y-1.5">
-                  
-                    <li class="flex items-start gap-2 text-sm rc-muted">
-                      <!-- 那个内联 SVG 就是每条前面的小对勾图标 -->
-                      <svg class="mt-1 shrink-0 text-[color-mix(in_oklab,var(--rc-accent)_80%,transparent)]" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-                      <span>项目关键词:机载雷达/穿墙雷达/生命探测/AI agent工具</span>
-                    </li>
-                  
-                    <li class="flex items-start gap-2 text-sm rc-muted">
-                      <!-- 那个内联 SVG 就是每条前面的小对勾图标 -->
-                      <svg class="mt-1 shrink-0 text-[color-mix(in_oklab,var(--rc-accent)_80%,transparent)]" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-                      <span>实机操作linux系统,自行烧录了运行系统,搭建了必要环境</span>
-                    </li>
-                  
-                    <li class="flex items-start gap-2 text-sm rc-muted">
-                      <!-- 那个内联 SVG 就是每条前面的小对勾图标 -->
-                      <svg class="mt-1 shrink-0 text-[color-mix(in_oklab,var(--rc-accent)_80%,transparent)]" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-                      <span>利用AI agent工具整理相关开源项目用以参考</span>
-                    </li>
-                  
-                    <li class="flex items-start gap-2 text-sm rc-muted">
-                      <!-- 那个内联 SVG 就是每条前面的小对勾图标 -->
-                      <svg class="mt-1 shrink-0 text-[color-mix(in_oklab,var(--rc-accent)_80%,transparent)]" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-                      <span>熟练使用AI agent工具,并对公司相关人员进行培训,提高工作效率,完成教学文档的输出</span>
-                    </li>
-                  
-                </ul>
-              
-            </div>
-          </div>
-        </div>
-      
-    </div>
-  </section>
-  
-
-  <!-- 04 技能：注意 cv.yml 里 skills 是"对象"（{ 分类: [技能, ...] }），
-         所以这里用 Object.entries 拆成 [分类名, 技能数组] 再逐对渲染成一张卡片。 -->
-  
-  <section class="mb-14" id="skills">
-    <div class="flex items-center gap-3 mb-6">
-      <span class="rc-kicker">04</span>
-      <h2 class="text-2xl font-semibold">Skills <span class="rc-title-zh">技能</span></h2>
-    </div>
-    <div class="grid gap-5 md:grid-cols-2">
-      
-        <div class="rc-card rc-focus rc-card-body">
-          <h3 class="text-base font-semibold mb-4">Programming Languages</h3>
-          <div class="flex flex-wrap gap-2">
-            
-              <span class="rc-tag">C</span>
-            
-              <span class="rc-tag">C++</span>
-            
-              <span class="rc-tag">Linux Shell</span>
-            
-              <span class="rc-tag">Verilog</span>
-            
-              <span class="rc-tag">Office</span>
-            
-          </div>
-        </div>
-      
-        <div class="rc-card rc-focus rc-card-body">
-          <h3 class="text-base font-semibold mb-4">Tools &amp; Frameworks</h3>
-          <div class="flex flex-wrap gap-2">
-            
-              <span class="rc-tag">matlab</span>
-            
-              <span class="rc-tag">Ubuntu Linux</span>
-            
-              <span class="rc-tag">Git</span>
-            
-              <span class="rc-tag">AI agent tools</span>
-            
-          </div>
-        </div>
-      
-    </div>
-  </section>
-  
-
-  <!-- 05 荣誉奖项：字段 title / date / issuer / description -->
-  
-  <section class="mb-14" id="awards">
-    <div class="flex items-center gap-3 mb-6">
-      <span class="rc-kicker">05</span>
-      <h2 class="text-2xl font-semibold">Awards &amp; Honors <span class="rc-title-zh">荣誉奖项</span></h2>
-    </div>
-    <div class="rc-timeline">
-      
-        <div class="rc-timeline-item rc-reveal">
-          <span class="rc-timeline-dot"></span>
-          <div class="rc-card rc-focus">
-            <div class="rc-card-body">
-              <div class="flex items-start justify-between gap-3">
-                <h3 class="text-lg font-semibold">CET-4</h3>
-                <span class="rc-badge-soft shrink-0 mt-0.5">2024</span>
-              </div>
-              <p class="mt-1 text-sm font-medium text-base-content/80">National Education Examinations Authority, Ministry of Education</p>
-              
-                <p class="mt-2 text-sm rc-muted">已通过英语四级考试.</p>
-              
-            </div>
-          </div>
-        </div>
-      
-    </div>
-  </section>
-  
-
-  <!-- 06 语言能力：字段 name（语言名）/ level（水平，如 CET-6） -->
-  
-  <section class="mb-14" id="languages">
-    <div class="flex items-center gap-3 mb-6">
-      <span class="rc-kicker">06</span>
-      <h2 class="text-2xl font-semibold">Languages <span class="rc-title-zh">语言能力</span></h2>
-    </div>
-    <div class="rc-card rc-focus rc-card-body">
-      <div class="flex flex-wrap gap-3">
+    <div class="mt-10 rc-card rc-card-body">
+      <div class="rc-filter-label mb-3">相关文章</div>
+      <div class="flex flex-wrap gap-2">
         
-          <div class="flex items-center gap-2 px-4 py-2.5 rounded-[var(--rc-radius-md)] bg-[color-mix(in_oklab,var(--rc-bg-softer)_62%,transparent)] text-sm">
-            <span class="font-semibold">Chinese 中文</span>
-            <span class="text-xs rc-muted">(母语)</span>
-          </div>
-        
-          <div class="flex items-center gap-2 px-4 py-2.5 rounded-[var(--rc-radius-md)] bg-[color-mix(in_oklab,var(--rc-bg-softer)_62%,transparent)] text-sm">
-            <span class="font-semibold">English 英文</span>
-            <span class="text-xs rc-muted">(口语交流/文档翻译)</span>
-          </div>
-        
-          <div class="flex items-center gap-2 px-4 py-2.5 rounded-[var(--rc-radius-md)] bg-[color-mix(in_oklab,var(--rc-bg-softer)_62%,transparent)] text-sm">
-            <span class="font-semibold">Japanese 日语</span>
-            <span class="text-xs rc-muted">(业余)</span>
-          </div>
+          <a href="https://github.com/kiri-yuu/plugin-radar-reporter" target="_blank" rel="noopener noreferrer" class="rc-btn rc-btn-outline rc-btn-sm">
+            <i class="fa-solid fa-arrow-right-long"></i> 按钮上显示的文字
+          </a>
         
       </div>
     </div>
-  </section>
   
 
-  <!-- 07 教学经历：字段 course_name / period / institution / role / description /
-         students / evaluation。比其他板块多一个判断：cv.yml 里没有 teaching
-         这一段时整块跳过（避免 forEach 遍历 undefined 报错）。 -->
+  <!-- Tags Footer -->
   
 
-  </div><!-- /min-w-0 -->
+  <!-- Share + Navigation -->
+  <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div class="rc-card rc-card-body">
+      
 
-  <!-- 右侧目录：窄屏（lg 以下）隐藏，靠上面的固定清单渲染 -->
-  <aside class="hidden lg:block">
-    
 
-<nav class="rc-toc" aria-label="本页目录">
-  <div class="rc-toc-head">
-    <i class="fa-solid fa-list-ul"></i>
-    <span>本页目录</span>
+    </div>
+
+    <div class="rc-card rc-card-body">
+      <h3 class="text-base font-semibold rc-serif mb-4">导航</h3>
+      <div class="space-y-3">
+        <a href="/diary/" class="rc-btn rc-btn-outline w-full justify-start">
+          <i class="fa-solid fa-folder-tree"></i>
+          全部碎碎念
+        </a>
+        
+      </div>
+    </div>
   </div>
-  <ul class="rc-toc-list">
-    
-      
-      <li class="rc-toc-item" data-level="1" style="--rc-lvl: 1">
-        <a href="#research" class="rc-toc-link" data-toc-target="research" data-level="1">
-          <span class="rc-toc-dot"></span>
-          <span class="rc-toc-label">Research Interests 研究兴趣</span>
-        </a>
-      </li>
-    
-      
-      <li class="rc-toc-item" data-level="1" style="--rc-lvl: 1">
-        <a href="#education" class="rc-toc-link" data-toc-target="education" data-level="1">
-          <span class="rc-toc-dot"></span>
-          <span class="rc-toc-label">Education 教育</span>
-        </a>
-      </li>
-    
-      
-      <li class="rc-toc-item" data-level="1" style="--rc-lvl: 1">
-        <a href="#experience" class="rc-toc-link" data-toc-target="experience" data-level="1">
-          <span class="rc-toc-dot"></span>
-          <span class="rc-toc-label">Experience 经历</span>
-        </a>
-      </li>
-    
-      
-      <li class="rc-toc-item" data-level="1" style="--rc-lvl: 1">
-        <a href="#skills" class="rc-toc-link" data-toc-target="skills" data-level="1">
-          <span class="rc-toc-dot"></span>
-          <span class="rc-toc-label">Skills 技能</span>
-        </a>
-      </li>
-    
-      
-      <li class="rc-toc-item" data-level="1" style="--rc-lvl: 1">
-        <a href="#awards" class="rc-toc-link" data-toc-target="awards" data-level="1">
-          <span class="rc-toc-dot"></span>
-          <span class="rc-toc-label">Awards &amp; Honors 荣誉</span>
-        </a>
-      </li>
-    
-      
-      <li class="rc-toc-item" data-level="1" style="--rc-lvl: 1">
-        <a href="#languages" class="rc-toc-link" data-toc-target="languages" data-level="1">
-          <span class="rc-toc-dot"></span>
-          <span class="rc-toc-label">Languages 语言</span>
-        </a>
-      </li>
-    
-  </ul>
-</nav>
 
-  </aside>
+  <!-- Previous/Next Navigation -->
+  
+  <div class="mt-12">
+    <h3 class="text-base font-semibold rc-serif mb-4">更多文章</h3>
+    <nav class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      
+      
+        <a href="/2026/09/15/%E4%B8%8A%E7%BA%BF%E4%BA%86%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%EF%BC%81/" class="rc-card rc-focus rc-card-body group md:text-right">
+          <div class="flex items-center gap-3 md:justify-end">
+            <div class="flex-1 min-w-0 md:text-right">
+              <div class="text-xs rc-muted">下一篇</div>
+              <div class="font-semibold truncate group-hover:text-[color-mix(in_oklab,var(--rc-accent)_90%,transparent)] transition-colors">上线了自己的博客！</div>
+            </div>
+            <i class="fa-solid fa-right-long rc-muted"></i>
+          </div>
+        </a>
+      
+    </nav>
+  </div>
+  
+
+</article>
+
+
 </div>
+
+
 
   </div>
 
